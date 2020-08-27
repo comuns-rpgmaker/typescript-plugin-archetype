@@ -26,7 +26,7 @@ export default [
                 ]
             },
             {
-                file: `${pkg.testProjectDir || `${__dirname}/dist`}/js/plugins${pkg.name}.debug.js`,
+                file: `${pkg.testProjectDir || `${__dirname}/dist`}/js/plugins/${pkg.name}.debug.js`,
                 name: pkg.namespace,
                 format: 'iife',
                 sourcemap: true,

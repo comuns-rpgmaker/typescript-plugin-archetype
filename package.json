@@ -2,9 +2,10 @@
   "name": "rmmz-typescript-plugin-archetype",
   "version": "1.0.0",
   "description": "RPG Maker MZ Typescript Plugin Archetype",
+  "namespace": "Comuns.Typescript.Archetype",
   "scripts": {
     "build": "rollup -c",
-    "test": "jasmine"
+    "test": "ts-node node_modules/jasmine/bin/jasmine"
   },
   "keywords": [
     "RMMZ"
@@ -19,10 +20,10 @@
     "@typescript-eslint/parser": "^3.9.1",
     "eslint": "^7.7.0",
     "jasmine": "^3.6.1",
-    "jasmine-ts": "^0.3.0",
     "rollup": "^2.26.5",
     "rollup-plugin-istanbul": "^2.0.1",
     "rollup-plugin-terser": "^7.0.0",
+    "ts-node": "^9.0.0",
     "tslib": "^2.0.1",
     "typescript": "^4.0.2"
   },

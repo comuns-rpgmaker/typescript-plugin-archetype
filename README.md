@@ -22,6 +22,9 @@ prepended to the generated output after the build process.
 Once you are done, `npm run build` will create a JS file for your plugin as
 `dist/js/plugins/{pkg.name}.js`.
 
+By default, the plugin is wrapped into an IIFE and everything you export from
+`./src/main.ts` is saved under a namespace to be configured in `package.json`.
+
 **TL;DR**:
 
 First:

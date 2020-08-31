@@ -1,0 +1,8 @@
+target: MZ
+author: Comuns
+description: Typescript plugin archetype
+help: |-  
+    Typescript Plugin Archetype.
+
+    This is a plugin archetype, it does not provide any functionality, only a
+    template for other plugins.

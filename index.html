@@ -1,0 +1,145 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>rmmz-typescript-plugin-archetype</title>
+	<meta name="description" content="Documentation for rmmz-typescript-plugin-archetype">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">rmmz-typescript-plugin-archetype</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1>rmmz-typescript-plugin-archetype</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#rpg-maker-mz---typescript-plugin-archetype" id="rpg-maker-mz---typescript-plugin-archetype" style="color: inherit; text-decoration: none;">
+					<h1>RPG Maker MZ - Typescript Plugin Archetype</h1>
+				</a>
+				<p>This is a template repository for writing Typescript plugins for RPG Maker MZ.
+					The main purpose here is to set a basis from which other repositories can
+				derive from and more easily be ready to start actual development.</p>
+				<a href="#getting-started" id="getting-started" style="color: inherit; text-decoration: none;">
+					<h2>Getting Started</h2>
+				</a>
+				<p>First of all, make sure you run <code>npm install</code> to install all the dependencies
+				for the project, such as <a href="https://rollupjs.org/">rollup.js</a> and typescript.</p>
+				<p>Make sure to set <code>package.json</code> up correctly, changing the package name to that
+					of your plugin (this will be used to generate the output file) and adjust the
+					values of the <code>version</code> and <code>description</code> fields (and, optionally, <code>keywords</code>).
+					Also make sure to add a property <code>testProjectDir</code> if you want to test your
+				plugin (can be relative).</p>
+				<p>To configure plugin parameters and the likes, change <code>header.js</code>. This file is
+				prepended to the generated output after the build process.</p>
+				<p>Once you are done, <code>npm run build</code> will create a JS file for your plugin as
+				<code>dist/js/plugins/{pkg.name}.js</code>.</p>
+				<p>By default, the plugin is wrapped into an IIFE and everything you export from
+				<code>./src/main.ts</code> is saved under a namespace to be configured in <code>package.json</code>.</p>
+				<p><strong>TL;DR</strong>:</p>
+				<p>First:</p>
+				<ul>
+					<li><code>npm install</code></li>
+					<li>Modify <code>package.json</code></li>
+				</ul>
+				<p>Then:</p>
+				<ul>
+					<li>Modify <code>header.js</code> and write Typescript code on <code>src</code></li>
+					<li><code>npm run build</code></li>
+					<li>Your plugin shows up compiled in <code>dist/js/plugins</code></li>
+					<li>Repeat</li>
+				</ul>
+				<a href="#guidelines" id="guidelines" style="color: inherit; text-decoration: none;">
+					<h2>Guidelines</h2>
+				</a>
+				<p>This repo&#39;s purpose is <strong>exclusively</strong> providing a basic structure for other
+					plugin repos.
+					It is <strong>not</strong> the place to create core functionality! (i.e. no application
+				code here!)</p>
+				<p>Changes to this repo <strong>must not</strong> demand that repos derived from it be changed, but it <strong>should</strong> be possible to update them to a more recent version of the
+				archetype fairly easily.</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_main_.html">&quot;main&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

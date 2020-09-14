@@ -32,18 +32,20 @@ First:
 - Modify `package.json`
 
 Then:
-- Modify `header.js` and write Typescript code on `src`
+- Modify `plugin-metadata.yaml` and write Typescript code on `src`
 - `npm run build`
-- Your plugin shows up compiled in `dist/js/plugins`
+- Your plugin shows up compiled in `dist/js/plugins` (plus a debug build in
+  whatever test directory you set up!)
 - Repeat
 
 
-## Guidelines
+## Contributing
 
 This repo's purpose is **exclusively** providing a basic structure for other
 plugin repos.
 It is **not** the place to create core functionality! (i.e. no application
 code here!)
 
-Changes to this repo **must not** demand that repos derived from it be changed, but it **should** be possible to update them to a more recent version of the
+Changes to this repo **must not** demand that repos derived from it be changed,
+but it **should** be possible to update them to a more recent version of the
 archetype fairly easily.

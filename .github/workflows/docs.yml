@@ -18,7 +18,15 @@ jobs:
       - name: Install Package dependencies
         run: npm ci
       - name: Build with TypeDoc
-        run: typedoc --excludeNotExported  --excludePrivate --out docs src
+        run: |
+          typedoc \
+            --excludeNotExported \
+            --excludePrivate \
+            --excludeExternals \
+            --externalPattern "node_modules/**" \
+            --readme README.md \
+            --out docs \
+            src
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:

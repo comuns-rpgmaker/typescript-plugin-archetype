@@ -1,9 +1,9 @@
 {
     "yaml.schemas": {
         "https://raw.githubusercontent.com/comuns-rpgmaker/plugin-metadata/master/schema/plugin-metadata.json": [
-            "./plugin-metadata.yml",
-            "./plugin-metadata.yaml",
-            "./plugin-metadata.json"
+            "plugin-metadata.yml",
+            "plugin-metadata.yaml",
+            "plugin-metadata.json"
         ]
     }
 }

@@ -19,7 +19,7 @@
   "author": "Comuns",
   "license": "Zlib",
   "devDependencies": {
-    "@comuns-rpgmaker/plugin-metadata": "^0.2.2",
+    "@comuns-rpgmaker/plugin-metadata": "^0.2.3",
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
     "@rollup/plugin-typescript": "^5.0.2",
     "@types/jasmine": "^3.5.13",

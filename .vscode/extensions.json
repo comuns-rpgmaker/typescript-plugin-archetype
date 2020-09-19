@@ -1,7 +1,6 @@
 {
     "recommendations": [
         "redhat.vscode-yaml",
-        "ruakr.vsc-nwjs",
-        "juancasanova.awesometypescriptproblemmatcher"
+        "ruakr.vsc-nwjs"
     ]
 }

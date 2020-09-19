@@ -16,8 +16,10 @@ values of the `version` and `description` fields (and, optionally, `keywords`).
 Also make sure to add a property `testProjectDir` if you want to test your
 plugin (can be relative).
 
-To configure plugin parameters and the likes, change `header.js`. This file is
-prepended to the generated output after the build process.
+To configure plugin parameters and the likes, change `plugin-metadata.yaml`.
+Read more about it on [comuns-rpgmaker/plugin-metadata][plugin-metadata].
+
+[plugin-metadata]: https://github.com/comuns-rpgmaker/plugin-metadata
 
 Once you are done, `npm run build` will create a JS file for your plugin as
 `dist/js/plugins/{pkg.name}.js`.

@@ -9,6 +9,10 @@
     "test": "ts-node node_modules/jasmine/bin/jasmine",
     "coverage": "nyc -r lcov -e .ts -x \"spec/*\" npm run test"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/comuns-rpgmaker/typescript-plugin-archetype"
+  },
   "keywords": [
     "RMMZ"
   ],
@@ -28,7 +32,6 @@
     "rmmz": "npm:@comuns-rpgmaker/rpg-maker-mz-typescript@^0.1.2",
     "rollup": "^2.26.5",
     "rollup-plugin-external-globals": "^0.6.0",
-    "rollup-plugin-istanbul": "^2.0.1",
     "rollup-plugin-terser": "^7.0.0",
     "ts-node": "^9.0.0",
     "tslib": "^2.0.1",
